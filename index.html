@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="myApp" ng-controller="TestCtrl">
+<head>
+  <meta charset="utf-8" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+  <title>Exercice 2</title>
+</head>
+<body>
+  <div>
+    <div>
+      <button ng-click="clicked()">oui</button>
+    </div>
+  </div>
+  <script>
+  var alertBox = angular.module('myApp',[]);
+alertBox.controller('TestCtrl', ['$scope',function($scope) {
+
+$scope.clicked = function(){
+   alert('oui');
+}
+}]);
+  </script>
+</body>
+</html>
